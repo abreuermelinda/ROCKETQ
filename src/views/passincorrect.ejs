@@ -1,9 +1,42 @@
-<html>
+<!DOCTYPE html>
     <head>
         <title> Senha incorreta </title>
-        <script>
-            confirm("Senha incorreta")
-            window.location.replace("/room/<%= roomId %>")
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!-- View Port -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="/styles/global.css">             
+        <link rel="stylesheet" href="/styles/passincorrect.css">
+
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+        
+        <script>          
+            function locationPage(){            
+             window.location.replace("/room/<%= roomId %>")
+            }           
         </script>
     </head>
+    <body>
+        <div id="pass-incorrect" class="content">
+            <header> 
+              <a href="/">
+                <img src="/images/logo.svg" alt="Rocket.Q Logo"/>
+              </a>  
+            </header>
+
+                <div>
+                    <h2>Senha Incorreta!</h2>
+                    <p>Você digitou a senha incorreta.</p>
+                    <p>Clique no botão abaixo, volte para página anterior e digite a senha correta.</p>
+                    <button onclick="locationPage()">Clique aqui</button>
+                </div>
+
+        </div>
+    </body>
 </html>

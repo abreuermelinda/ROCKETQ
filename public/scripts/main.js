@@ -11,25 +11,14 @@ const checkButtons = document.querySelectorAll(".actions a.check")
 
 checkButtons.forEach(button =>{
   //adicionar a escuta
-  button.addEventListener("click", handleClick)
-  /* , event =>{
-
-    modalTitle.innerHTML = "Marcar como lida"
-    //Abrir modal
-    modal.open()
-  }) */
+  button.addEventListener("click", handleClick) 
 })
 
 /*Quando o botão delete for clicado ele abre a modal*/
 const deleteButton = document.querySelectorAll(".actions a.delete")
 
 deleteButton.forEach(button => {
-  button.addEventListener("click", (event) => handleClick(event, false))
-  /* , event =>{
-
-    modalTitle.innerHTML = "Excluir essa pergunta"
-    modal.open()
-  }) */
+  button.addEventListener("click", (event) => handleClick(event, false)) 
 })
 
 function handleClick(event, check = true) { //o padrão da variável ckeck será sempre true

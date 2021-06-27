@@ -1,0 +1,44 @@
+.content {
+  max-width: min(112rem, 90%);
+}
+
+#pass-incorrect header {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#pass-incorrect > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 10%;
+}
+
+#pass-incorrect h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.8rem;
+  color: var(--black);
+  font-weight: 700;
+  line-height: 4.2rem;
+  margin-bottom: 4.4rem;
+}
+
+#pass-incorrect p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  color: var(--overlay);
+  font-weight: 500;
+  line-height: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+#pass-incorrect button {
+  background: var(--red);
+  text-transform: capitalize;
+  width: 20%;
+  margin-top: 5%;
+}
